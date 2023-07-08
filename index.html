@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--divinectorweb.com-->
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Energi Fisika 1</title>
+	<link href="https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="#"><span class="text-warning">Energi</span></a> <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link" href="#"><i class="fa-solid fa-house"></i> Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#penjelasan"><i class="fa-solid fa-bookmark"></i> About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#soal"> <i class="fa-solid fa-book-open"></i> Soal</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#team"><i class="fa-solid fa-people-group"></i> Team</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="carousel slide" data-bs-ride="carousel" id="carouselExampleCaptions">
+    <div class="carousel-inner">
+      <div class="carousel-item active bg-1">
+        <div class="word">
+					<span>F</span>
+					<span>I</span>
+					<span>S</span>
+					<span>I</span>
+					<span>K</span>
+					<span>A</span>
+					<span> </span>
+					<span>1</span>
+				</div>
+			</div>
+			<div class="carousel-item bg-2">
+        <div class="carousel-caption">
+          <h5>Energi <span class="text-warning">Kinetik</span></h5></br>
+          <p>Energi kinetik terjadi saat benda mengalami perubahan kelajuan. Artinya, saat benda semula diam dan bergerak dengan kelajuan v, maka benda tersebut memiliki energi kinetik. 
+            Acuan energi kinetik adalah saat benda berada dalam posisi diam, yaitu nilainya sama dengan nol. 
+            Energi kinetik pada suatu benda dipengaruhi oleh massa benda dan kelajuannya. Semakin besar massa suatu benda, maka semakin besar pula energi kinetiknya. 
+            Begitu juga jika kelajuan benda semakin cepat, maka energi kinetik suatu benda tersebut juga semakin besar. </p>
+            <h4>Rumus : Ek = ½ m.v²</h4>
+            
+          </div>
+        </div>
+      <div class="carousel-item bg-3">
+        <div class="carousel-caption">
+          <h5>Energi <span class="text-warning">Potensial</span></h5></br>
+          <p >Pengertian energi potensial adalah energi yang disimpan dalam benda atau suatu keadaan tertentu. 
+            Menurut ilmu mekanika, energi potensial merupakan energi yang dimiliki oleh benda, karena kedudukan atau ketinggian benda tersebut. 
+            Artinya, benda mati yang diam pun memiliki energi, yaitu energi potensial. Energi potensial ini hanya tersimpan saja dan bermanfaat ketika sudah diubah menjadi bentuk energi lain. 
+            Contohnya, energi potensial pada air yang berada di ketinggian akan bermanfaat ketika berubah menjadi energi kinetik, yaitu air terjun.</p>
+            <h4>Rumus : Ep = mgh</h4>
+            
+          </div>
+        </div>
+        
+      </div><button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleCaptions" type="button"><span aria-hidden="true" class="carousel-control-prev-icon"></span> <span class="visually-hidden">Previous</span></button> <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleCaptions" type="button"><span aria-hidden="true" class="carousel-control-next-icon"></span> <span class="visually-hidden">Next</span></button> <!--thumbnails-->
+      
+    </div>
+    <!-- penjelasan start -->
+    <div class="container-soal">
+      <div class="soal-section">
+        <section id="penjelasan" class="penjelasan-section" >
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+            <h2 class="section-heading">Penjelasan Energi <img src="img/fotoEnergi.png" class="penjelasan-img" width="" height="50"></h2>
+                    <hr> 
+                    <p class="lead mb-5">Energi adalah kemampuan untuk melakukan kerja. Dalam fisika, energi didefinisikan
+                        sebagai kapasitas untuk melakukan kerja. Energi memiliki beberapa bentuk, seperti energi kinetik,
+                        energi potensial, energi listrik, dan lainnya. Pemahaman tentang energi sangat penting dalam
+                        mempelajari berbagai konsep fisika.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="img/energy.jpg" alt="" class="img-fluid rounded-circle" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- penjelasan end -->
+
+    <!-- Soal cerita -->
+    <div id="soal" >
+      <h3>Soal Energi Kinetik <img class="img-energi" src="img/energiKinetik.png" width="85" height="85"></h3>
+      <p class="text-soal">Sebuah benda memiliki massa <input type="number" id="massInput" placeholder="Isi massa benda"> kg dan kecepatan <input type="number" id="velocityInput" placeholder="Isi kecepatan benda"> m/s. Hitunglah energi kinetiknya!</p>
+        <button onclick="hitungEnergy()" class="btn">Hitung <i class="fa-solid fa-gears"></i></button>
+      <div id="result">
+        <p id="energy"></p>
+        <div id="calculation">
+          <h3>Rumus Energi Kinetik : </h3>
+          <p id="formula"></p>
+          
+          <h3>Cara Mengerjakan:</h3>
+          <p id="calculationSteps"></p>
+        </div>
+      </div>
+      <button onclick="hideResult()" class="btn" id="btn-close1">Close <i class="fa-regular fa-circle-xmark"></i></button>
+    </div>
+    
+    <div class="soal" >
+      <h3>Soal Energi Potensial <img class="img-energi" src="img/energiPotensial.png" width="85" height="85"></h3>
+      <p class="text-soal">Sebuah benda dengan massa <input type="number" id="massaInput" placeholder="Isi massa benda"> kg berada pada ketinggian <input type="number" id="ketinggianInput" placeholder="Isi ketinggian"> meter di atas permukaan tanah. Hitunglah energi potensial benda tersebut!</p>
+      <button onclick="hitungEnergiPotensial()" class="btn">Hitung <i class="fa-solid fa-gears"></i></button>
+      <div id="resultPotensial" style="display: none;">
+        <p id="energyPotensial"></p>
+        <div id="calculationPotensial">
+          <h3>Rumus Energi Potensial :</h3>
+          <p id="formulaPotensial"></p>
+          
+          <h3>Cara Mengerjakan:</h3>
+          <p id="calculationStepsPotensial"></p>
+        </div>
+      </div>
+      <button onclick="hideResultPotensial()" class="btn" id="btn-close2">Close <i class="fa-regular fa-circle-xmark"></i></button>
+    </div>
+  </div>
+</div>
+</div>
+  
+
+  <script src="script.js"></script>
+    <!-- team start -->
+    <section id="team" class="team-section" >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                  <hr>
+                    <h2 class="section-team">Our Team</h2><hr>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 text-center">
+                    <div class="team-item">
+                      <img src="img/female.jpeg" alt="" class="img-fluid rounded-circle" width="150" style="margin-top: 4rem;" />
+                      <h4 class="team-heading">Nadya Aulia Almas</h4>
+                      <p class="text-muted">A11.2022.14728</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 text-center">
+                    <div class="team-item">
+                      <img src="img/female.jpeg" alt="" class="img-fluid rounded-circle" width="150" style="margin-top: 4rem;" />
+                      <h4 class="team-heading">Uly Atmi Azizah</h4>
+                      <p class="text-muted">A11.2022.14736</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-4 col-md-4 text-center">
+                    <div class="team-item">
+                      <img src="img/male.png" alt="" class="img-fluid rounded-circle" width="150" style="margin-top: 4rem;" />
+                      <h4 class="team-heading">Muhammad Dyaka Faiz Yuhendra</h4>
+                      <p class="text-muted">A11.2022.14712</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-4 text-center">
+                    <div class="team-item">
+                      <img src="img/male.png" alt="" class="img-fluid rounded-circle" width="150" style="margin-top: 4rem;" />
+                      <h4 class="team-heading">Muhammad Naufal Abdulmajid</h4>
+                      <p class="text-muted">A11.2022.14727</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-4 text-center">
+                    <div class="team-item">
+                      <img src="img/male.png" alt="" class="img-fluid rounded-circle" width="150" style="margin-top: 4rem;" />
+                      <h4 class="team-heading">Regan Caesar Suseno</h4>
+                      <p class="text-muted">A11.2022.14725</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+    </section>
+    <!-- team end -->
+
+    <!-- footer start -->
+    <footer class="bg-dark text-white text-center py-2">
+        <p>&copy; 2023 Team Energi. All Rights Reserved.</p>
+    </footer>
+    <!-- footer end -->
+
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/2150806ab8.js" crossorigin="anonymous"></script>
+</body>
+</html>
